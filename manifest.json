@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Article Summariser",
+  "version": "0.1",
+  "description": "Extract and summarise web and blog articles into 10 key points",
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "host_permissions": ["https://chat.openai.com/*", "https://chatgpt.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "48": "icon.png"
+    },
+    "default_title": "Summarize this article"
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}
